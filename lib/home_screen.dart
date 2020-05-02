@@ -349,7 +349,7 @@ class _ContentCardState extends State<ContentCard> {
                     ),
                   ),
                   Container(
-                    margin: new EdgeInsets.only(bottom: 230),
+                    margin: new EdgeInsets.only(bottom: 200),
                     child: this.widget.index == 0
                         ? RichText(
                             text: TextSpan(
