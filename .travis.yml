@@ -16,3 +16,5 @@ script:
 cache:
   directories:
     - $HOME/.pub-cache
+notifications:
+  slack: nebula-puj5514:HVCovuZAUJIOT6cO0muTVkYE
