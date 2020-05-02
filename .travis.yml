@@ -18,4 +18,5 @@ cache:
     - $HOME/.pub-cache
 notifications:
   slack: nebula-puj5514:HVCovuZAUJIOT6cO0muTVkYE
+notifications:
   slack: teamwuud:ja0PLA9riaar2SvumEfpTlA9
