@@ -11,9 +11,8 @@ addons:
       - fonts-droid-fallback
 before_script:
   - git clone https://github.com/flutter/flutter.git -b beta
-  - ./flutter/bin/flutter doctor
 script:
-  - ./flutter/bin/flutter test
+  - ./flutter/bin/flutter doctor
 cache:
   directories:
     - $HOME/.pub-cache
