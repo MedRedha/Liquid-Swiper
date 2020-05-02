@@ -12,6 +12,7 @@ import 'package:shimmer/shimmer.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+// ignore: non_constant_identifier_names
 final String Flutter = 'https://cdn.worldvectorlogo.com/logos/flutter-logo.svg';
 
 void main() => runApp(Swiper());
@@ -710,6 +711,7 @@ class _ParticlesState extends State<Particles> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     return Rendering(
       startTime: Duration(seconds: 30),
       onTick: _simulateParticles,
@@ -729,6 +731,7 @@ class _ParticlesState extends State<Particles> {
 class ParticleModel {
   Animatable tween;
   double size;
+  // ignore: deprecated_member_use
   AnimationProgress animationProgress;
   Random random;
 
@@ -741,14 +744,18 @@ class ParticleModel {
     final endPosition = Offset(-0.2 + 1.4 * random.nextDouble(), -0.2);
     final duration = Duration(milliseconds: 3000 + random.nextInt(6000));
 
+    // ignore: deprecated_member_use
     tween = MultiTrackTween([
+      // ignore: deprecated_member_use
       Track("x").add(
           duration, Tween(begin: startPosition.dx, end: endPosition.dx),
           curve: Curves.easeInOutSine),
+      // ignore: deprecated_member_use
       Track("y").add(
           duration, Tween(begin: startPosition.dy, end: endPosition.dy),
           curve: Curves.easeIn),
     ]);
+    // ignore: deprecated_member_use
     animationProgress = AnimationProgress(duration: duration, startTime: time);
     size = 0.2 + random.nextDouble() * 0.4;
   }
@@ -822,12 +829,15 @@ class AnimatedBackgroundState extends State<AnimatedBackground>
 
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     final tween = MultiTrackTween(
       [
+        // ignore: deprecated_member_use
         Track("color1").add(
           Duration(seconds: 1),
           ColorTween(begin: Color(0xff8a113a), end: Colors.lightBlue.shade900),
         ),
+        // ignore: deprecated_member_use
         Track("color2").add(
           Duration(seconds: 1),
           ColorTween(begin: Color(0xff440216), end: Colors.blue.shade600),
@@ -835,7 +845,9 @@ class AnimatedBackgroundState extends State<AnimatedBackground>
       ],
     );
 
+    // ignore: deprecated_member_use
     return ControlledAnimation(
+      // ignore: deprecated_member_use
       playback: Playback.MIRROR,
       tween: tween,
       duration: tween.duration,
