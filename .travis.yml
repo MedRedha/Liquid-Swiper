@@ -13,6 +13,7 @@ before_script:
   - git clone https://github.com/flutter/flutter.git -b beta
 script:
   - ./flutter/bin/flutter doctor
+  - bash <(curl -s https://codecov.io/bash)
 cache:
   directories:
     - $HOME/.pub-cache
@@ -20,4 +21,3 @@ notifications:
   slack: 
     - nebula-puj5514:HVCovuZAUJIOT6cO0muTVkYE
     - teamwuud:ja0PLA9riaar2SvumEfpTlA9
-bash <(curl -s https://codecov.io/bash)
