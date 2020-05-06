@@ -38,7 +38,6 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 ## Show your support
 
-
 Give a ⭐️ if this project helped you!
 
 <a href="https://www.patreon.com/medredha">
