@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Liquid Swiper 👋</h1>
+<h1 align="center">Flutter Liquid Swiper</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/MedRedha/Liquid-Swiper/blob/master/LICENSE" target="_blank">
